@@ -1,13 +1,17 @@
 <?php
 
 $db=[
-  new Food(),
-  new Food(),
-  new Food(),
+  $foods=[
+    new Food('cibo secco', 15, '' , 'cani', 'meat', '300kcal', '20kg'),
+    new Food('cibo umido', 20, '' , 'gatti', 'chicken', '200kcal', '10kg'),
+    new Food('snack', 8, '' , 'cani', 'chicken', '100kcal', '2kg'),
+  ],
+  $toys=[
 
-  new Toys(),
-  new Toys(),
-  new Toys(),
+    new Toys('pallina', 2, '' , 'cani', 'poliestere', 'piccolo'),
+    new Toys('laser',3, '' , 'gatti', 'plastica', 'piccolo'),
+    new Toys('corda', 2.5, '' , 'cani', 'tessuto intrecciato', 'lunghezza personalizzabile'),
+  ]
 ]
 
 // $db=[
