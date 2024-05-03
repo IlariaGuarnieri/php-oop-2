@@ -1,15 +1,17 @@
 <?php
 
 class Shop{
-  public $spazzole;
-  public $cuccie;
-  public $ciotole;
-  public $toelettatura;
+  public $prezzo;
+  public $name;
+  public $imballaggio;
+  public $materiale;
+  
 
-  public function __construct(string $_spazzole, string $_cuccie)
+  public function __construct(int $_prezzo, string $_name, string $_imballaggio)
   {
-    $this->spazzole = $_spazzole;
-    $this->cuccie =$_cuccie;
+    $this->prezzo = $_prezzo;
+    $this->name = $_name;
+    $this->imballaggio = $_imballaggio;
   }
 }
 
