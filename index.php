@@ -1,7 +1,11 @@
 <?php
-require_once __DIR__. '/Model/Shop.php';
-require_once __DIR__. '/Model/Gatti.php';
-require_once __DIR__. '/Model/Cani.php';
+// require_once __DIR__. '/Model/Shop.php';
+// require_once __DIR__. '/Model/Gatti.php';
+// require_once __DIR__. '/Model/Cani.php';
+
+require_once __DIR__. '/Model/Products.php';
+require_once __DIR__. '/Model/Food.php';
+require_once __DIR__. '/Model/Toys.php';
 require_once __DIR__. '/data/db.php';
 
 
@@ -33,7 +37,7 @@ require_once __DIR__. '/data/db.php';
     <h1>shop</h1>
 
     <div>
-      
+
     </div>
     <div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
