@@ -5,7 +5,7 @@ require_once __DIR__. '/Availability.php';
 class Food extends Products{
 
   use Availability;
-  
+
   public $ingredients;
   public $nutrition;
   public $peso;
@@ -14,10 +14,24 @@ class Food extends Products{
 
     parent:: __construct($_name, $_prezzo,$_immagine, $_categories);
 
-    $this->ingredients = $_ingredients;
+    // if(strlen($_ingredients) < 3){
+    //     throw new Exception('Gli ingredienti devono avere almeno 3 caratteri');
+    // }
+
+
+    $this->setIngredients($_ingredients);
     $this->nutrition = $_nutrition;
     $this->peso = $_peso;
+
   }
+
+    public function setIngredients($_ingredients){
+    if(empty($_ingredients) || strlen(($_ingredients) < 3)){
+        throw new Exception('gli ingredienti devono avere almeno 3 caratteri');
+    }
+    $this->name = $_ingredients;
+}
+
   public function getIngredients(){
     return $this->ingredients;
   }
@@ -27,6 +41,8 @@ class Food extends Products{
   public function getPeso(){
     return $this->peso;
   }
+
+
 }
 
 ?>

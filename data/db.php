@@ -4,7 +4,7 @@
 
 $db=[
   $foods=[
-    new Food('cibo secco', 15, 'https://arcaplanet.vtexassets.com/arquivos/ids/270797/Monge-All-Breeds-Adult-Salmone-e-Riso-12Kg.jpg?v=637852830908370000' , new ProductCategory('cani', 'icona'), 'meat', '300kcal', '20kg'),
+    new Food('ci', 15, 'https://arcaplanet.vtexassets.com/arquivos/ids/270797/Monge-All-Breeds-Adult-Salmone-e-Riso-12Kg.jpg?v=637852830908370000' , new ProductCategory('cani', 'icona'), '', '300kcal', '20kg'),
     new Food('cibo umido', 20, 'https://arcaplanet.vtexassets.com/arquivos/ids/270797/Monge-All-Breeds-Adult-Salmone-e-Riso-12Kg.jpg?v=637852830908370000' , new ProductCategory('gatti', 'icona'), 'chicken', '200kcal', '10kg'),
     new Food('snack', 8, 'https://arcaplanet.vtexassets.com/arquivos/ids/270797/Monge-All-Breeds-Adult-Salmone-e-Riso-12Kg.jpg?v=637852830908370000' , new ProductCategory('cani', 'icona'), 'chicken', '100kcal', '2kg'),
   ],

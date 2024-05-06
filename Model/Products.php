@@ -16,7 +16,20 @@ class Products{
   }
 
   // funzioni
+  // public function setPrice(){
+  //   if(!is_numeric ($prezzo)){
+  //     throw new Exception('il prezzo deve essere un numero');
+  //   }
+  //   $this-> prezzo = $_prezzo;
+  // }
 
+//   public function setName($_name){
+//     if(empty($_name) || strlen(($_name) < 3)){
+//         throw new Exception('Il nome deve avere almeno 3 caratteri');
+//     }
+//     $this->name = $_name;
+// }
+  
   public function getName(){
     return $this->name;
   }

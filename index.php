@@ -7,11 +7,11 @@ require_once __DIR__. '/Model/Products.php';
 require_once __DIR__. '/Model/Food.php';
 require_once __DIR__. '/Model/Toys.php';
 require_once __DIR__. '/data/db.php';
+require_once __DIR__. '/Model/Availability.php';
 
-$food2 = new Food('cibo secco', 15, 'https://arcaplanet.vtexassets.com/arquivos/ids/270797/Monge-All-Breeds-Adult-Salmone-e-Riso-12Kg.jpg?v=637852830908370000' , new ProductCategory('cani', 'icona'), 'meat', '300kcal', '20kg');
+$food2 = new Food('ci', 15, 'https://arcaplanet.vtexassets.com/arquivos/ids/270797/Monge-All-Breeds-Adult-Salmone-e-Riso-12Kg.jpg?v=637852830908370000' , new ProductCategory('cani', 'icona'), 'meat', '300kcal', '20kg');
 $food2-> availability = 'yes';
 var_dump($food2);
-
 
 ?>
 
@@ -52,7 +52,7 @@ var_dump($food2);
       <h5 class="card-title">CATEGORIA:<?php echo $food->categories->name?></h5>
       <p>&euro; <?php echo $food->prezzo?></p>
       <p class="card-text"> ingredienti:<?php echo $food->ingredients ?></p>
-      <P>Available:<?php echo $food2-> availability ?></P>
+      <P>available:<?php echo $food2-> availability ?></P>
     </div>
   </div>
   <?php endforeach; ?>
@@ -69,7 +69,7 @@ var_dump($food2);
       <h2><?php echo $toy->name?></h2>
       <h5 class="card-title">CATEGORIA:<?php echo $toy->categories->name?></h5>
       <p>&euro; <?php echo $toy->prezzo?></p>
-      <P>Available:<?php echo $food2-> availability ?></P>
+      <P>available:<?php echo $food2-> availability ?></P>
     </div>
   </div>
   <?php endforeach; ?>
