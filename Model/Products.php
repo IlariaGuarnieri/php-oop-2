@@ -1,4 +1,5 @@
 <?php 
+require_once __DIR__. '/ProductCategory.php';
 
 class Products{
   public $name;
@@ -6,8 +7,8 @@ class Products{
   public $immagine;
   public $categories;
 
-  public function __construct(string $_name, float $_prezzo, string $_immagine, string $_categories){
-
+  public function __construct(string $_name, float $_prezzo, string $_immagine, ProductCategory $_categories)
+  {
     $this->name = $_name;
     $this->prezzo = $_prezzo;
     $this->immagine = $_immagine;
@@ -25,9 +26,9 @@ class Products{
   public function getImg(){
     return $this->immagine;
   }
-  public function getCategories(){
-    return $this->categories;
-  }
+  // public function getCategories(){
+  //   return $this->categories;
+  // }
   
 }
 
