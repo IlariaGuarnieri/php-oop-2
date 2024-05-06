@@ -8,6 +8,10 @@ require_once __DIR__. '/Model/Food.php';
 require_once __DIR__. '/Model/Toys.php';
 require_once __DIR__. '/data/db.php';
 
+$food2 = new Food('cibo secco', 15, 'https://arcaplanet.vtexassets.com/arquivos/ids/270797/Monge-All-Breeds-Adult-Salmone-e-Riso-12Kg.jpg?v=637852830908370000' , new ProductCategory('cani', 'icona'), 'meat', '300kcal', '20kg');
+$food2-> availability = 'yes';
+var_dump($food2);
+
 
 ?>
 
@@ -48,6 +52,7 @@ require_once __DIR__. '/data/db.php';
       <h5 class="card-title">CATEGORIA:<?php echo $food->categories->name?></h5>
       <p>&euro; <?php echo $food->prezzo?></p>
       <p class="card-text"> ingredienti:<?php echo $food->ingredients ?></p>
+      <P>Available:<?php echo $food2-> availability ?></P>
     </div>
   </div>
   <?php endforeach; ?>
@@ -64,7 +69,7 @@ require_once __DIR__. '/data/db.php';
       <h2><?php echo $toy->name?></h2>
       <h5 class="card-title">CATEGORIA:<?php echo $toy->categories->name?></h5>
       <p>&euro; <?php echo $toy->prezzo?></p>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <P>Available:<?php echo $food2-> availability ?></P>
     </div>
   </div>
   <?php endforeach; ?>
