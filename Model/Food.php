@@ -1,8 +1,11 @@
 <?php 
 require_once __DIR__.'/Products.php';
+require_once __DIR__. '/Availability.php';
 
 class Food extends Products{
 
+  use Availability;
+  
   public $ingredients;
   public $nutrition;
   public $peso;
