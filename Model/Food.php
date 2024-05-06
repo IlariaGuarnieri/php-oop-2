@@ -26,8 +26,8 @@ class Food extends Products{
   }
 
     public function setIngredients($_ingredients){
-    if(empty($_ingredients) || strlen(($_ingredients) < 3)){
-        throw new Exception('gli ingredienti devono avere almeno 3 caratteri');
+    if(empty($_ingredients)){
+        throw new Exception('gli ingredienti devono essere presenti');
     }
     $this->name = $_ingredients;
 }
