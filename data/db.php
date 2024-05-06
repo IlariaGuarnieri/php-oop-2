@@ -10,9 +10,9 @@ $db=[
   ],
 
   $toys=[
-    new Toys('pallina', 2, 'https://arcaplanet.vtexassets.com/arquivos/ids/270797/Monge-All-Breeds-Adult-Salmone-e-Riso-12Kg.jpg?v=637852830908370000' , new ProductCategory('cani', 'icona'), 'poliestere', 'piccolo'),
-    new Toys('laser',3, 'https://arcaplanet.vtexassets.com/arquivos/ids/270797/Monge-All-Breeds-Adult-Salmone-e-Riso-12Kg.jpg?v=637852830908370000' , new ProductCategory('gatti', 'icona'), 'plastica', 'piccolo'),
-    new Toys('corda', 2.5, 'https://arcaplanet.vtexassets.com/arquivos/ids/270797/Monge-All-Breeds-Adult-Salmone-e-Riso-12Kg.jpg?v=637852830908370000' , new ProductCategory('cani', 'icona'), 'tessuto intrecciato', 'lunghezza personalizzabile'),
+    new Toys('pallina', 2, 'https://arcaplanet.vtexassets.com/arquivos/ids/217805/https---www.arcaplanet.it-media-catalog-product--t-r-trixie-scoiattolo-striato-in-peluche-tric85.jpg?v=637454593279430000' , new ProductCategory('cani', 'icona'), 'poliestere', 'piccolo'),
+    new Toys('laser',3, 'https://arcaplanet.vtexassets.com/arquivos/ids/217805/https---www.arcaplanet.it-media-catalog-product--t-r-trixie-scoiattolo-striato-in-peluche-tric85.jpg?v=637454593279430000' , new ProductCategory('gatti', 'icona'), 'plastica', 'piccolo'),
+    new Toys('corda', 2.5, 'https://arcaplanet.vtexassets.com/arquivos/ids/217805/https---www.arcaplanet.it-media-catalog-product--t-r-trixie-scoiattolo-striato-in-peluche-tric85.jpg?v=637454593279430000' , new ProductCategory('cani', 'icona'), 'tessuto intrecciato', 'lunghezza personalizzabile'),
   ]
 ]
 

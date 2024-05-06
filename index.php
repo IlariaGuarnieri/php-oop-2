@@ -38,20 +38,37 @@ require_once __DIR__. '/data/db.php';
 
 <!-- food -->
 <h3>FOODS</h3>
+<div class="d-flex my-3 p-3">
 
-<?php foreach($foods as $food): ?>
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title"><?php echo $food->categories->name?></h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <?php foreach($foods as $food): ?>
+  <div class="card" style="width: 18rem;">
+    <img src="<?php echo $food->immagine?>" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h2><?php echo $food->name?></h2>
+      <h5 class="card-title">CATEGORIA:<?php echo $food->categories->name?></h5>
+      <p>&euro; <?php echo $food->prezzo?></p>
+      <p class="card-text"> ingredienti:<?php echo $food->ingredients ?></p>
+    </div>
   </div>
+  <?php endforeach; ?>
 </div>
-<?php endforeach; ?>
 
 <!-- toys -->
 <h3>TOYS</h3>
+<div class="d-flex my-3 p-3">
+
+  <?php foreach($toys as $toy): ?>
+  <div class="card" style="width: 18rem;">
+    <img src="<?php echo $toy->immagine?>" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h2><?php echo $toy->name?></h2>
+      <h5 class="card-title">CATEGORIA:<?php echo $toy->categories->name?></h5>
+      <p>&euro; <?php echo $toy->prezzo?></p>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+  <?php endforeach; ?>
+</div>
 
   </body>
   </html>
